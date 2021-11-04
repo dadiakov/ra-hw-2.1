@@ -1,6 +1,7 @@
 import React from 'react';
 import Toolbar from './Toolbar';
 import ProjectList from './ProjectList';
+import PropTypes from 'prop-types';
 
 export default class Portfolio extends React.Component {
   constructor(props) {
@@ -42,4 +43,8 @@ export default class Portfolio extends React.Component {
       </>
     );
   }
+}
+
+Portfolio.propTypes = {
+  cards: PropTypes.array.isRequired,
 }
